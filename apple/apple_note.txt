@@ -1,0 +1,16 @@
+Scrapy-Redis
+爬取到的資料會自動暫存於Redis，並且同連結會避免重複爬取
+
+爬蟲主體 crawler.py
+資料內容 items.py
+
+執行
+scrapy crawl apple
+
+轉換 Redis 資料至 MySQL
+執行 process_apple_item.py
+(暫定以 While True 的方式持續轉換)
+
+後續
+測試多個爬蟲同時執行的狀況
+(需使用同一個 redis 資料庫)
